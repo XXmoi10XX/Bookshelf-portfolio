@@ -1,0 +1,20 @@
+<%= render "shared/errors", obj: @book %>
+
+<table class="attr">
+  <tr>
+    <th><%= form.label :id %></th>
+    <td><%= form.text_field :number, size: 8 %></td>
+  </tr>
+  <tr>
+    <th><%= form.label :author %></th>
+    <td><%= form.text_field :author %></td>
+  </tr>
+  <tr>
+    <th><%= form.label :title %></th>
+    <td><%= form.text_field :title %></td>
+  </tr>
+  <tr>
+    <th><%= form.label :publisher %></th>
+    <td><%= form.text_field :publisher %></td>
+  </tr>
+</table>
