@@ -1,26 +1,22 @@
-# README
+# Bookshelf 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+画像
 
-Things you may want to cover:
 
-* Ruby version
+# 概要
+改訂4版 基礎 Ruby on Railsで作ったアプリに手を加えたものです。
+本の登録、レビュー、検索が出来ます。
 
-* System dependencies
+# 制作背景
+改訂4版 基礎 Ruby on Railsで作ったアプリに手を加えたものです。 
+本で学習した知識を実際に自分で考えた機能を付け加える事で理解を深めると同時にポートフォリオとして
+利用するために制作しました。
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# -Bookshelf-portfolio-
-# -Bookshelf-portfolio-
+# 機能一覧
+・サインイン、サインアップ機能
+・新規投稿ページ
+   新規投稿機能
+   投稿確認機能
+   画像投稿機能
+・投稿一覧ページ
+　
