@@ -6,10 +6,11 @@ acts_as_list scope: :entry
 attribute :new_data
 
 validates :new_data,presence: { on: :create }
+
 validate if: :new_data do
   if new_data.respond_to?(:content_type)
     unless new_data.content_type.in?(ALLOWED_CONTENT_TYPES)
-      errors.addd(:new_data, :invaild_image_type)
+      errors.add(:new_data, :invaild_image_type)
     end
   else
     errors.add(:new_data, invaild)
