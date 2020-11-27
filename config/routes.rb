@@ -8,7 +8,7 @@ resources :books do
   get "search", on: :collection
 end
 
-resources :members  do
+resources :members, only: [:index,:show] do
   get "search", on: :collection
   resources :entries,only: [:index]
 end
@@ -18,11 +18,19 @@ resource :account, only: [:show, :edit, :update]
 resource :password, only: [:show, :edit, :update ]
 
 
-resources :articles
+resources :articles, only: [:index, :show]
 resources :entries do
   resources :images, controller: "entry_images" do
   patch :move_higher, :move_lower,on: :member
 end
-end 
+end
+
+  namespace :admin do
+    root to: "top#index"
+    resources :members do
+    get "search", on: :collection
+  end
+  resources :articles 
+end
 
 end
